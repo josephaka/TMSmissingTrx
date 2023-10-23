@@ -32,7 +32,7 @@ missing_trx as (
 select i_a.*
 from nibssdata i_a
 where not exists (select 1 from tms_pos_transaction ir where i_a."TerminalID"  = ir.terminal_id
-                        and ltrim(rtrim(i_a."RetrievalReferenceNo"))  = ir.ret_ref_no 
+                        and i_a."RetrievalReferenceNo_t"  = ir.ret_ref_no 
                         and DATE(i_a."date") = DATE(ir.date)
                         and i_a."Amount" = cast(ir.amt as numeric(14, 2))/100 
                 ) 
@@ -84,7 +84,7 @@ merchant_id merchant_ext_id,
 'NULL' pos_pin_capture_code,
 'NULL' proc_code,
 "ResponseCode" response_code,
-"RetrievalReferenceNo" ret_ref_no,
+"RetrievalReferenceNo_t" ret_ref_no,
 'NULL'  reversed,
 "Amount" sales_amt,
 'NULL' sales_id,
