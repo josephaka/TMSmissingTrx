@@ -1,0 +1,17 @@
+config:
+    send_anonymous_usage_stats: False
+    use_colors: False
+
+tmsmissingtrx:
+  outputs:
+    default:
+      type: postgres
+      threads: 2
+      keepalives_idle: 0
+      host: "{{ env_var('DATAWAREHOUSE_ENDPOINT') }}"
+      port: 5433
+      user: "{{ env_var('DATAWAREHOUSE_USER') }}"
+      pass: "{{ env_var('DATAWAREHOUSE_PASSWORD') }}"
+      dbname: "{{ env_var('DATAWAREHOUSE_DB_NAME') }}"
+      schema: public
+  target: default

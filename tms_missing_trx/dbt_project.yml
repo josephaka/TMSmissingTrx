@@ -1,0 +1,29 @@
+name: 'tmsmissingtrx'
+version: '0.1'
+require-dbt-version: ">=0.13.0"
+profile: 'tmsmissingtrx'
+source-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+data-paths: ["data"]
+macro-paths: ["macros"]
+config-version: 2
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_modules"
+    - "logs"
+
+models:
+  tmsmissingtrx:
+      marts:
+        tmsmissingtrx:
+          intermediate:
+            materialized: view # Materialized View will not store data in intermediate permanently
+            +schema: arca
+          materialized: table # Materialized Table will store data in settlement permanently although next run cleans it
+          +schema: arca
+      staging:
+        materialized: view # Materialized View will not store data in staging permanently
+        tags: ["staging", "hourly"]
+        +schema: arca

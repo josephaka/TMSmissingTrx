@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: raw_tms_pos_transaction
+    description: staging data from nibss
+
+    freshness:
+      warn_after:
+        period: hour
+        count: 12
+      error_after:
+        period: hour
+        count: 24
+
+    database: '{{ env_var("DATAWAREHOUSE_DB_NAME") }}'
+    schema: public
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+    tables:
+      - name: tms_pos_transaction
+        columns:
+          - name: id
+            description: Primary key of the table
+            tests:
+              - unique
+              - not_null
+      
+
+models:
+  - name: stg_tms_pos_transaction
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+

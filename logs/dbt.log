@@ -1,0 +1,82 @@
+2023-10-21 15:51:33.469195 (MainThread): Running with dbt=0.20.0
+2023-10-21 15:51:33.578233 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/josephaka/Documents/Projects/TMSmissingTrx/profile', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2023-10-21 15:51:33.579557 (MainThread): Tracking: do not track
+2023-10-21 15:51:33.609136 (MainThread): Partial parsing not enabled
+2023-10-21 15:51:33.623925 (MainThread): Parsing macros/catalog.sql
+2023-10-21 15:51:33.626707 (MainThread): Parsing macros/relations.sql
+2023-10-21 15:51:33.628035 (MainThread): Parsing macros/adapters.sql
+2023-10-21 15:51:33.650903 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2023-10-21 15:51:33.652581 (MainThread): Parsing macros/core.sql
+2023-10-21 15:51:33.656422 (MainThread): Parsing macros/materializations/test.sql
+2023-10-21 15:51:33.663140 (MainThread): Parsing macros/materializations/helpers.sql
+2023-10-21 15:51:33.672906 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2023-10-21 15:51:33.674489 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2023-10-21 15:51:33.692134 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2023-10-21 15:51:33.725114 (MainThread): Parsing macros/materializations/seed/seed.sql
+2023-10-21 15:51:33.745484 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2023-10-21 15:51:33.747124 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2023-10-21 15:51:33.754542 (MainThread): Parsing macros/materializations/common/merge.sql
+2023-10-21 15:51:33.767956 (MainThread): Parsing macros/materializations/table/table.sql
+2023-10-21 15:51:33.774661 (MainThread): Parsing macros/materializations/view/view.sql
+2023-10-21 15:51:33.780524 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2023-10-21 15:51:33.785136 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2023-10-21 15:51:33.785919 (MainThread): Parsing macros/etc/query.sql
+2023-10-21 15:51:33.786795 (MainThread): Parsing macros/etc/is_incremental.sql
+2023-10-21 15:51:33.788213 (MainThread): Parsing macros/etc/datetime.sql
+2023-10-21 15:51:33.796831 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2023-10-21 15:51:33.798750 (MainThread): Parsing macros/etc/get_custom_database.sql
+2023-10-21 15:51:33.800201 (MainThread): Parsing macros/adapters/common.sql
+2023-10-21 15:51:33.844891 (MainThread): Parsing macros/schema_tests/relationships.sql
+2023-10-21 15:51:33.846479 (MainThread): Parsing macros/schema_tests/not_null.sql
+2023-10-21 15:51:33.847626 (MainThread): Parsing macros/schema_tests/unique.sql
+2023-10-21 15:51:33.848842 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2023-10-21 15:51:34.036617 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.tmsmissingtrx.marts.settlement.intermediate
+- models.tmsmissingtrx.staging
+- models.tmsmissingtrx.marts.settlement
+
+2023-10-21 15:51:34.047980 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2023-10-21 15:51:34.048502 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2023-10-21 15:51:34.052925 (MainThread): Flushing usage events
+2023-10-21 15:55:48.447120 (MainThread): Running with dbt=0.20.0
+2023-10-21 15:55:48.559786 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/josephaka/Documents/Projects/TMSmissingTrx/profile', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2023-10-21 15:55:48.560846 (MainThread): Tracking: do not track
+2023-10-21 15:55:48.585733 (MainThread): Partial parsing not enabled
+2023-10-21 15:55:48.599602 (MainThread): Parsing macros/catalog.sql
+2023-10-21 15:55:48.602178 (MainThread): Parsing macros/relations.sql
+2023-10-21 15:55:48.603454 (MainThread): Parsing macros/adapters.sql
+2023-10-21 15:55:48.626194 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2023-10-21 15:55:48.627912 (MainThread): Parsing macros/core.sql
+2023-10-21 15:55:48.631904 (MainThread): Parsing macros/materializations/test.sql
+2023-10-21 15:55:48.638702 (MainThread): Parsing macros/materializations/helpers.sql
+2023-10-21 15:55:48.648435 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2023-10-21 15:55:48.650002 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2023-10-21 15:55:48.667535 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2023-10-21 15:55:48.699862 (MainThread): Parsing macros/materializations/seed/seed.sql
+2023-10-21 15:55:48.720824 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2023-10-21 15:55:48.722502 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2023-10-21 15:55:48.730025 (MainThread): Parsing macros/materializations/common/merge.sql
+2023-10-21 15:55:48.743349 (MainThread): Parsing macros/materializations/table/table.sql
+2023-10-21 15:55:48.750167 (MainThread): Parsing macros/materializations/view/view.sql
+2023-10-21 15:55:48.756549 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2023-10-21 15:55:48.761076 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2023-10-21 15:55:48.761857 (MainThread): Parsing macros/etc/query.sql
+2023-10-21 15:55:48.762729 (MainThread): Parsing macros/etc/is_incremental.sql
+2023-10-21 15:55:48.764150 (MainThread): Parsing macros/etc/datetime.sql
+2023-10-21 15:55:48.772483 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2023-10-21 15:55:48.774234 (MainThread): Parsing macros/etc/get_custom_database.sql
+2023-10-21 15:55:48.775682 (MainThread): Parsing macros/adapters/common.sql
+2023-10-21 15:55:48.820257 (MainThread): Parsing macros/schema_tests/relationships.sql
+2023-10-21 15:55:48.821842 (MainThread): Parsing macros/schema_tests/not_null.sql
+2023-10-21 15:55:48.822906 (MainThread): Parsing macros/schema_tests/unique.sql
+2023-10-21 15:55:48.824123 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2023-10-21 15:55:49.001820 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.tmsmissingtrx.marts.tmsmissingtrx
+- models.tmsmissingtrx.marts.tmsmissingtrx.intermediate
+- models.tmsmissingtrx.staging
+
+2023-10-21 15:55:49.011475 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2023-10-21 15:55:49.011966 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2023-10-21 15:55:49.015772 (MainThread): Flushing usage events

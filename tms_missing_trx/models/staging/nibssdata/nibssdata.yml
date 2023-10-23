@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: raw_nibss_data
+    description: staging data from nibss
+
+    freshness:
+      warn_after:
+        period: hour
+        count: 12
+      error_after:
+        period: hour
+        count: 24
+
+    database: '{{ env_var("DATAWAREHOUSE_DB_NAME") }}'
+    schema: nibss
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+    tables:
+      - name: nibsstrx
+        columns:
+          - name: id
+            description: Primary key of the table
+            tests:
+              - unique
+              - not_null
+      
+
+models:
+  - name: stg_nibss_data
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
